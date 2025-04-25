@@ -13,7 +13,7 @@ public class JavaConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/api/contact")
-                .allowedOrigins("http://localhost:3000") // Remplacer par ton domaine frontend
+                .allowedOrigins("https://marvelous-biscochitos-8b098a.netlify.app") // Remplacer par ton domaine frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE") // Méthodes HTTP autorisées
                 .allowedHeaders("*") // En-têtes autorisés
                 .allowCredentials(true); // Autoriser l'envoi de cookies
